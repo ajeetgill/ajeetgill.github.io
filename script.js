@@ -32,3 +32,4 @@ document.querySelector('img.preview').addEventListener('click', function(e) {
   },false);
 
 }, false);
+
