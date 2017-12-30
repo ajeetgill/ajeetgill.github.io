@@ -28,7 +28,7 @@ document.querySelector('img.preview').addEventListener('click', function(e) {
       myOverlay.removeChild(highRes);
     }
   myOverlay.removeEventListener('click', bgRemover);  //the overlay kept listening and trying to find highRes although it had been deleted so had to delete event listener 
-                                                      //the removeEventListener needs a function name that's why this function has a name.
+                                                      //the removeEventListener needs a function name that's why this function has a name.~
   },false);
 
 }, false);
