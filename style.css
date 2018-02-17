@@ -1,5 +1,6 @@
 body {
   background: url(images/background_wood.jpg) repeat;
+  border-top: 2% solid teal
 }
 
 img.preview {
