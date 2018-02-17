@@ -1,6 +1,6 @@
 body {
-  /* background: url(images/background_wood.jpg) repeat; */
-  border-top: 10px solid teal
+  border-top: 10px solid teal;
+  background: url(images/background_wood.jpg) repeat;
 }
 
 img.preview {
