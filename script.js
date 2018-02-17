@@ -33,3 +33,9 @@ document.querySelector('img.preview').addEventListener('click', function(e) {
 
 }, false);
 
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
