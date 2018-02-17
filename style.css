@@ -7,7 +7,7 @@ body {
 #rightSide {
     /* width: 100%; */
     /* max-width: 1920px; YOUR BG MAX SIZE */
-    background:url(images/bg.jpg) no-repeat center bottom;
+    background: url(images/bg.jpg) no-repeat center bottom;
     background-size: cover;
     opacity: 0.8;
     
