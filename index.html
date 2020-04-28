@@ -1,52 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Events</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-</head>
-<body>
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-top w3-card w3-dark-grey" style="width:20%;" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-        <img src="images/aj.jpg" id="profilePic" alt="Ajeet Gill" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button">About Me</a>
-        <a href="#upcoming-features" class="w3-bar-item w3-button">Upcoming Pages</a>
-        <a href="#" class="w3-bar-item w3-button">Impossible List</a>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajeet Gill Ver: 1.1.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="about-me">
+        <p>Hey, I'm</p>
+        <h1>AJEET</h1>
+        <p>I do web development</p>
+        <!-- @todo: add animation effect on the span below, fades from "read books"->"take pictures"  -->
+        <!-- <p class="about-me--para">& "<span>read books</span>"</p> -->
+      </div>
+      <div id="socialmedia">
+        <a href="https://www.instagram.com/ajeet_gill_/">
+          <img
+            class="social-media-icons"
+            src="./assets/instagram.svg"
+            alt="instagram account"
+          />
+        </a>
+        <a href="https://github.com/ajeetshergill"
+          ><img
+            class="social-media-icons"
+            src="./assets/github.svg"
+            alt="github account"
+        /></a>
+        <a href="https://www.goodreads.com/user/show/83526171-ajeet-gill"
+          ><img
+            class="social-media-icons"
+            src="./assets/goodreads.svg"
+            alt="goodreads account"
+        /></a>
+        <a href="https://www.linkedin.com/in/ajeet-gill/"
+          ><img
+            class="social-media-icons"
+            src="./assets/linkedin.svg"
+            alt="linkedIn account"
+        /></a>
+      </div>
+      <p id="disclaimer">*optimised for mobile only at the moment</p>
     </div>
-    <div class="w3-main" style="margin-left:20%;">
-        <div class="w3-dark-grey">
-        <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
-            <div class="w3-container">
-                <h1>Ajeet Gill</h1>
-            </div>
-        </div>
-   
-    <div class="w3-leftbar" id="rightSide">
-        <div class="w3-container fontOpacity">
-            <div class="w3-container">
-                <h3>Responsive Sidebar</h3>
-                <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
-                <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
-                <p>The sidebar will overlay of the page content.</p>
-                <p><b>Resize the browser window to see how it works.</b></p>
-            </div>
-
-            <div class="w3-container" id="upcoming-features">
-                <h1>UPCOMING FEATURES</h1>
-                <ol>
-                    <li>Impossible List</li>
-                    <li>Download Resume Button</li>
-                </ol>
-                <img class="preview" src="images/taquitosandcheese_tn.jpg" alt="Taquitos and Cheese">
-                <div class="overlay"></div>
-            </div>
-        </div>
-    </div>
-    </div>
-  
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
+<!--NOTE: export the color hex values, icons and images beforehand. -->

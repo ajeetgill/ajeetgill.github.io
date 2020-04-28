@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  font-family: 'Montserrat';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #707070;
+}
+
+body, html {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+#disclaimer {
+  margin: 0;
+  padding: 0;
+  font-size: .5rem;
+}
+
+.container {
+  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 30vh, 28vh;
+  padding: .2em 1em;
+  height: 100vh;
+}
+
+.container .about-me {
+  font-size: 1.5rem;
+}
+
+.container .about-me p {
+  margin: 0;
+  padding: .5em 0;
+}
+
+.container .about-me .about-me--para {
+  font-size: 1.2rem;
+}
+
+.container .about-me h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.container #socialmedia a img {
+  margin: .2em .5em;
+  width: 3rem;
+}
+
+.container #socialmedia a img:first-child {
+  margin-left: 0;
+}
+
+/* Block component */
+/*# sourceMappingURL=main.css.map */

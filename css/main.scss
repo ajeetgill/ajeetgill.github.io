@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+// >> #DEBUG: FOR TESTING DIVS AND STUFF
+// $alpha : 0;
+// $alpha : 1;
+// $dark: 25%;
+// $medium : 50%;
+// $light: 75%;
+
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    color: #707070;
+}
+body, html{
+    font-size: 18px; // using rem, em units for responsiveness and easier maintenance
+    margin: 0; // if not used, then the default margins of body add a scrolling bar to the container when height is 100vh
+    padding: 0;
+}
+#disclaimer{
+    margin: 0;
+    padding: 0;
+    font-size: .5rem;
+}
+.container {
+    // >> IN CASE I WANT TO ADD A GRADIENT TO THE BACKGROUND AND MAKE FONT WHITE-ish
+    // background-image: url(../images/bg-left.png), url(../images/bg-right.png), linear-gradient(to bottom, gray, white);
+    // background-size: 30vh, 30vh, 100%;
+
+    background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    background-size: 30vh, 28vh;
+    padding: .2em 1em;
+    height: 100vh;
+    // >> DEBUG
+    // background-color: hsla(120,100%,$dark,$alpha);
+    
+    .about-me{
+        font-size: 1.5rem;
+        p{
+            margin: 0;
+            padding: .5em 0;
+        }
+        .about-me--para{
+            font-size: 1.2rem;
+        }
+        // >> DEBUG
+        // p:nth-child(odd){
+        //    background-color: hsla(20,100%,$light,$alpha);
+        // }
+        // p:nth-child(even){
+        //    background-color: hsla(120,100%,$medium,$alpha); // green
+        // }
+
+        h1{
+            font-family: 'Bangers', cursive;
+            font-size: 5rem;
+            // background-color: rgba(145, 247, 2, $alpha);
+            margin: 0;
+        }
+    }
+
+    #socialmedia{
+        // >> DEBUG
+        // background-color: hsla(120,100%,$light,$alpha);
+        a{
+            img{
+                margin: .2em .5em;
+                width: 3rem;
+            }
+            img:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    
+}
+// 
+
+/* Block component */
+// .btn {}
+
+// /* Element that depends upon the block */ 
+// .btn__price {}
+
+// /* Modifier that changes the style of the block */
+// .btn--orange {} 
+// .btn--big {}
+// 
