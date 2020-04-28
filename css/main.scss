@@ -29,6 +29,7 @@ body, html{
     // background-size: 30vh, 30vh, 100%;
 
     background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
     background-size: 30vh, 28vh;
