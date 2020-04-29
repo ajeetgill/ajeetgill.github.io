@@ -11,7 +11,8 @@
 *{
     font-family: 'Montserrat';
     box-sizing: border-box;
-    color: #707070;
+    // color: #707070;
+    color: #fff;
 }
 body, html{
     font-size: 18px; // using rem, em units for responsiveness and easier maintenance
@@ -25,14 +26,14 @@ body, html{
 }
 .container {
     // >> IN CASE I WANT TO ADD A GRADIENT TO THE BACKGROUND AND MAKE FONT WHITE-ish
-    // background-image: url(../images/bg-left.png), url(../images/bg-right.png), linear-gradient(to bottom, gray, white);
-    // background-size: 30vh, 30vh, 100%;
+    background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), linear-gradient(to bottom, gray, white);
+    background-size: 50vw, 50vw, 100%;
 
-    background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+    // background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+    // background-size: 30vh, 28vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom left, bottom right;
-    background-size: 30vh, 28vh;
     padding: .2em 1em;
     height: 100vh;
     // >> DEBUG
@@ -77,6 +78,10 @@ body, html{
         }
     }
     
+}
+.dark-mode{
+    filter: invert(100%);
+    // filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 // 
 

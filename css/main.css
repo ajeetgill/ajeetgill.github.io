@@ -4,7 +4,7 @@
   font-family: 'Montserrat';
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #707070;
+  color: #fff;
 }
 
 body, html {
@@ -20,11 +20,12 @@ body, html {
 }
 
 .container {
-  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), -webkit-gradient(linear, left top, left bottom, from(gray), to(white));
+  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), linear-gradient(to bottom, gray, white);
+  background-size: 50vw, 50vw, 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom left, bottom right;
-  background-size: 30vh, 28vh;
   padding: .2em 1em;
   height: 100vh;
 }
@@ -55,6 +56,11 @@ body, html {
 
 .container #socialmedia a img:first-child {
   margin-left: 0;
+}
+
+.dark-mode {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 /* Block component */
