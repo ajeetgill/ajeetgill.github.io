@@ -63,5 +63,73 @@ body, html {
           filter: invert(100%);
 }
 
+body::before {
+  content: "";
+  width: 200vw;
+  height: 200vw;
+  /* width: 200vh; height: 200vh; */
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(85, 78, 15, 0.2);
+  border-radius: 500px;
+  -webkit-animation: wiggle 5s ease-in forwards;
+          animation: wiggle 5s ease-in forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 500px) {
+  body::before {
+    border-radius: 70vh;
+    width: 150vh;
+    height: 150vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body::before {
+    border-radius: 600px;
+    width: 220vw;
+    height: 220vw;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  body::before {
+    border-radius: 140vw;
+    width: 300vw;
+    height: 300vw;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  from {
+    /* top: 120px; */
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    /* top: -10px; */
+    -webkit-transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes wiggle {
+  from {
+    /* top: 120px; */
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    /* top: -10px; */
+    -webkit-transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg);
+  }
+}
+
 /* Block component */
 /*# sourceMappingURL=main.css.map */

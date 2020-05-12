@@ -85,6 +85,52 @@ body, html{
 }
 // 
 
+body::before {
+    content: "";
+    width: 200vw; height: 200vw;
+    /* width: 200vh; height: 200vh; */
+    position: fixed;
+    top: 50vh; 
+    left: 50%;
+    // z-index: -1;
+    transform: translateX(-50%);
+    background-color: rgba(85, 78, 15, 0.2);
+    // background-color: rgba(45, 15, 83, 0.2);
+    // background-color: rgba(255, 255, 255, 0.3);
+    // background-image: linear-gradient(rgba(110, 110, 110,.5), rgba(218, 209, 209,.2));
+    border-radius: 500px;
+    animation: wiggle 5s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+@media screen and (max-width: 500px) {
+    body::before {
+        border-radius: 70vh;
+        width: 150vh; height: 150vh;
+    }
+  }
+@media screen and (min-width: 600px) {
+    body::before {
+        border-radius: 600px;
+        width: 220vw; height: 220vw;
+    }
+  }
+@media screen and (min-width: 750px) {
+    body::before {
+        border-radius: 140vw;
+        width: 300vw; height: 300vw;
+    }
+  }
+  @keyframes wiggle{
+    from{
+        /* top: 120px; */
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to{
+        /* top: -10px; */
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
 /* Block component */
 // .btn {}
 
