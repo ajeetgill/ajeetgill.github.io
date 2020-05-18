@@ -1,10 +1,8 @@
+@import url(./waves.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 * {
   font-family: "Montserrat";
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
 }
 
 body,
@@ -21,14 +19,61 @@ html {
 }
 
 .container {
-  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), -webkit-gradient(linear, left top, left bottom, from(gray), to(white));
-  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), linear-gradient(to bottom, gray, white);
-  background-size: 50vw, 50vw, 100%;
+  background-image: url(../assets/bg-left.png), url(../assets/bg-right.png);
+  background-size: 50vw, 50vw;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom left, bottom right;
   padding: 0.2em 1em;
   height: 100vh;
+}
+
+@media (min-width: 550px) {
+  .container {
+    background-size: 40vh, 40vh;
+  }
+}
+
+@media (min-width: 880px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'sidebarl about sidebarr';
+  }
+  .container .about-me {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: about;
+    padding-top: 20vh;
+  }
+}
+
+.container .sidebarleft, .container .sidebarright {
+  display: none;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 880px) {
+  .container .sidebarleft {
+    grid-area: sidebarl;
+    display: block;
+    height: 100%;
+    background-color: #000;
+  }
+}
+
+@media (min-width: 880px) {
+  .container .sidebarright {
+    grid-area: sidebarr;
+    display: block;
+    background-color: #000;
+  }
 }
 
 .container .about-me {
@@ -40,14 +85,23 @@ html {
   padding: 0.5em 0;
 }
 
-.container .about-me .about-me--para {
-  font-size: 1.2rem;
-}
-
 .container .about-me h1 {
   font-family: "Bangers", cursive;
   font-size: 5rem;
   margin: 0;
+}
+
+@media (min-width: 550px) {
+  .container .about-me {
+    text-align: center;
+    font-size: max(1.5em, 3vw);
+  }
+}
+
+@media (min-width: 880px) {
+  .container .about-me {
+    font-size: max(1.5em, 2vw);
+  }
 }
 
 .container #socialmedia a img {
@@ -62,74 +116,6 @@ html {
 .dark-mode {
   -webkit-filter: invert(100%);
           filter: invert(100%);
-}
-
-body::before {
-  content: "";
-  width: 200vw;
-  height: 200vw;
-  /* width: 200vh; height: 200vh; */
-  position: fixed;
-  top: 50vh;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: rgba(85, 78, 15, 0.2);
-  border-radius: 500px;
-  -webkit-animation: wiggle 5s ease-in forwards;
-          animation: wiggle 5s ease-in forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@media screen and (max-width: 500px) {
-  body::before {
-    border-radius: 70vh;
-    width: 150vh;
-    height: 150vh;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  body::before {
-    border-radius: 600px;
-    width: 220vw;
-    height: 220vw;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  body::before {
-    border-radius: 140vw;
-    width: 300vw;
-    height: 300vw;
-  }
-}
-
-@-webkit-keyframes wiggle {
-  from {
-    /* top: 120px; */
-    -webkit-transform: translateX(-50%) rotate(0deg);
-            transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    /* top: -10px; */
-    -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
-  }
-}
-
-@keyframes wiggle {
-  from {
-    /* top: 120px; */
-    -webkit-transform: translateX(-50%) rotate(0deg);
-            transform: translateX(-50%) rotate(0deg);
-  }
-  to {
-    /* top: -10px; */
-    -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
-  }
 }
 
 /* Block component */
