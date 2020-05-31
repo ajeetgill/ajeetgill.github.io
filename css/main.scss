@@ -12,12 +12,17 @@
 // https://css-tricks.com/conditional-media-query-mixins/
 @mixin bp($point) {
   @if $point == tablet {
-    @media (min-width: 550px)  { @content; }
+    @media (min-width: 550px) {
+      @content;
+    }
   }
   @if $point == desktop {
-    @media (min-width: 880px)  { @content; }
+    @media (min-width: 880px) {
+      @content;
+    }
   }
 }
+
 * {
   font-family: "Montserrat";
   // color: #fff;
@@ -38,11 +43,11 @@ html {
   // background-image: url(../assets/bg-left.png), url(../assets/bg-right.png), linear-gradient(to bottom, gray, white);
   // background-size: 50vw, 50vw, 100%;
 
-  @include bp(tablet){
+  @include bp(tablet) {
     background-size: 40vh, 40vh;
   }
-  @include bp(desktop){
-    .about-me{
+  @include bp(desktop) {
+    .about-me {
       grid-area: about;
       padding-top: 20vh;
     }
@@ -50,16 +55,17 @@ html {
     margin: 0;
     padding: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'sidebarl about sidebarr';
+    grid-template-areas: "sidebarl about sidebarr";
   }
-  .sidebarleft , .sidebarright {
+  .sidebarleft,
+  .sidebarright {
     display: none;
     z-index: -1;
     padding: 0;
     margin: 0;
   }
-  .sidebarleft{
-    @include bp(desktop){
+  .sidebarleft {
+    @include bp(desktop) {
       grid-area: sidebarl;
       display: block;
       // width: 30%;
@@ -67,8 +73,8 @@ html {
       background-color: #000;
     }
   }
-  .sidebarright{
-    @include bp(desktop){
+  .sidebarright {
+    @include bp(desktop) {
       grid-area: sidebarr;
       display: block;
       // width: 30%;
@@ -89,34 +95,32 @@ html {
   .about-me {
     font-size: 1.4rem;
     width: 100%;
-    &__span--animate{
-      
-        // animation: topToBottom 12.5s linear infinite 0s;
-        animation: topToBottom .5s linear infinite 0s;
-        color: #00abe9;
-        opacity: 0;
-        overflow: hidden;
-        position: absolute;
-        
-        display: block;
-        text-align: center;
-        &:nth-child(2){
+    &__span--animate {
+      // animation: topToBottom 12.5s linear infinite 0s;
+      animation: topToBottom 0.5s linear infinite 0s;
+      color: #00abe9;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
 
+      display: block;
+      text-align: center;
+      &:nth-child(2) {
         animation-delay: 2.5s;
         -ms-animation-delay: 2.5s;
         -webkit-animation-delay: 2.5s;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         animation-delay: 5s;
         -ms-animation-delay: 5s;
         -webkit-animation-delay: 5s;
       }
-      &:nth-child(4){
+      &:nth-child(4) {
         animation-delay: 7.5s;
         -ms-animation-delay: 7.5s;
         -webkit-animation-delay: 7.5s;
       }
-      &:nth-child(5){
+      &:nth-child(5) {
         animation-delay: 10s;
         -ms-animation-delay: 10s;
         -webkit-animation-delay: 10s;
@@ -140,11 +144,11 @@ html {
       // background-color: rgba(145, 247, 2, $alpha);
       margin: 0;
     }
-    @include bp(tablet){
+    @include bp(tablet) {
       text-align: center;
       font-size: m#{a}x(1.5em, 3vw);
     }
-    @include bp(desktop){
+    @include bp(desktop) {
       font-size: m#{a}x(1.5em, 2vw);
     }
   }
@@ -167,14 +171,39 @@ html {
   filter: invert(100%);
   // filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
-@keyframes topToBottom{
-	0% { opacity: 0; display: block;}
-	5% { opacity: 0; transform: translateY(-25px); display: block;}
-	10% { opacity: 1; transform: translateY(0px); display: block;}
-	25% { opacity: 1; transform: translateY(0px); display: block;}
-	30% { opacity: 0; transform: translateY(25px); display: block;}
-	80% { opacity: 0; display: block;}
-	100% { opacity: 0; display: block;}
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(-25px);
+    display: block;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+    display: block;
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+    display: block;
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(25px);
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: block;
+  }
 }
 //
 

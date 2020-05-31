@@ -41,7 +41,7 @@ html {
     padding: 0;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'sidebarl about sidebarr';
+        grid-template-areas: "sidebarl about sidebarr";
   }
   .container .about-me {
     -ms-grid-row: 1;
@@ -51,7 +51,8 @@ html {
   }
 }
 
-.container .sidebarleft, .container .sidebarright {
+.container .sidebarleft,
+.container .sidebarright {
   display: none;
   z-index: -1;
   padding: 0;
@@ -81,8 +82,8 @@ html {
 }
 
 .container .about-me__span--animate {
-  -webkit-animation: topToBottom .5s linear infinite 0s;
-          animation: topToBottom .5s linear infinite 0s;
+  -webkit-animation: topToBottom 0.5s linear infinite 0s;
+          animation: topToBottom 0.5s linear infinite 0s;
   color: #00abe9;
   opacity: 0;
   overflow: hidden;

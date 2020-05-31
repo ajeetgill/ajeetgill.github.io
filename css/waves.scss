@@ -34,7 +34,9 @@
     transform: translateX(-50%) rotate(360deg);
   }
 }
-.about-me {
+.container {
+  // .about-me {  //as long as the importing file has a container class and a body tag, all three waves should work
+  // SUGGESTION: it would be awesome if i could tell how many waves I want
   &::after {
     width: 150vw;
     height: 150vw;

@@ -24,7 +24,7 @@
   }
 }
 
-.about-me::after {
+.container::after {
   width: 150vw;
   height: 150vw;
   border-radius: 35vh;
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 550px) {
-  .about-me::after {
+  .container::after {
     top: 60vh;
     border-radius: 80vh;
     width: 200vw;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 880px) {
-  .about-me::after {
+  .container::after {
     top: 70vh;
     border-radius: 105vw;
     width: 250vw;
@@ -59,7 +59,7 @@
   }
 }
 
-.about-me::before {
+.container::before {
   width: 180vw;
   height: 180vw;
   border-radius: 40vh;
@@ -77,7 +77,7 @@
 }
 
 @media (min-width: 550px) {
-  .about-me::before {
+  .container::before {
     top: 60vh;
     border-radius: 80vh;
     width: 200vw;
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 880px) {
-  .about-me::before {
+  .container::before {
     top: 70vh;
     border-radius: 105vw;
     width: 250vw;
