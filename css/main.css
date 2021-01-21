@@ -51,6 +51,16 @@ html {
   }
 }
 
+.container #tempID {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .container #tempID {
+    display: block;
+  }
+}
+
 .container .sidebarleft,
 .container .sidebarright {
   display: none;

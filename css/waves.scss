@@ -11,18 +11,18 @@
   animation-iteration-count: infinite;
   z-index: -1;
 }
-@mixin bp($point) {
-  @if $point == tablet {
-    @media (min-width: 550px) {
-      @content;
-    }
-  }
-  @if $point == desktop {
-    @media (min-width: 880px) {
-      @content;
-    }
-  }
-}
+// @mixin bp($point) {
+//   @if $point == tablet {
+//     @media (min-width: 550px) {
+//       @content;
+//     }
+//   }
+//   @if $point == desktop {
+//     @media (min-width: 880px) {
+//       @content;
+//     }
+//   }
+// }
 
 @keyframes wiggle {
   from {

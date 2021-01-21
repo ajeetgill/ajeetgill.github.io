@@ -57,6 +57,12 @@ html {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "sidebarl about sidebarr";
   }
+  #tempID {
+    display: none;
+    @include bp(tablet) {
+      display: block;
+    }
+  }
   .sidebarleft,
   .sidebarright {
     display: none;

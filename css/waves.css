@@ -2,12 +2,12 @@
   from {
     /* top: 120px; */
     -webkit-transform: translateX(-50%) rotate(0deg);
-            transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
   }
   to {
     /* top: -10px; */
     -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
   }
 }
 
@@ -15,12 +15,12 @@
   from {
     /* top: 120px; */
     -webkit-transform: translateX(-50%) rotate(0deg);
-            transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
   }
   to {
     /* top: -10px; */
     -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
   }
 }
 
@@ -35,9 +35,9 @@
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   z-index: -1;
 }
 
@@ -70,9 +70,9 @@
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   z-index: -1;
 }
 
@@ -100,15 +100,15 @@ body::before {
   border-radius: 55vh;
   background-color: rgba(45, 15, 83, 0.2);
   -webkit-animation: wiggle 7s ease-in alternate;
-          animation: wiggle 7s ease-in alternate;
+  animation: wiggle 7s ease-in alternate;
   top: 52vh;
   content: "";
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   z-index: -1;
 }
 
