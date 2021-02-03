@@ -19,14 +19,18 @@ body {
   padding: .5rem;
 }
 #btn-back{
+  display: block;
+  max-width: fit-content;
   text-decoration: none;
   padding: .5rem 1rem;
   background-color: #111;
   color: white;
-  border-radius: 10%;
+  border-radius: 5px;
 }
 nav{
     text-align: center;
+    margin: .5em;
+    margin-bottom: 0;
 }
 nav > a {
     margin: 0 .5rem;

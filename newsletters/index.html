@@ -6,11 +6,17 @@
     <title>Aj: Newsletters</title>
     <link rel="stylesheet" href="./style.css" />
     <style>
-      .newsletter-list a {
+      .newsletter-list a:hover {
+        padding: .25rem 1.2rem .2rem 1.2rem;
+        background-color: #eee;
       }
 
       .newsletter-list a {
         text-decoration: none;
+        background-color: #ddd;
+        padding: .2rem 1rem;
+        border-radius: 5px;
+        transition: 0.2s all;
       }
     </style>
   </head>
@@ -18,13 +24,13 @@
   <body>
     <section class="container">
       <h1 class="page-title">All Newsletters to date</h1>
-      <a id="btn-back" href="../index.html"> < Back</a>
+      <a id="btn-back" href="../index.html">Back</a>
     </section>
     <section class="container">
       <h2 id="">Jan 1 - Jan 31</h2>
       <article class="sub-section newsletter-list" id="">
         <h3 id="" class="article-heading">
-          <a href="./1.html" class="twitter-share-button">#1</a>
+          <a href="./1.html" class="twitter-share-button">#1<sup>st </sup> Newsletter </a>
         </h3>
       </article>
     </section>
