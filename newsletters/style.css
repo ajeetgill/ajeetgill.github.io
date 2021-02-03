@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 2em auto;
+  max-width: 900px;
+  background-color: white;
+  padding: .5rem;
+}
+
+#btn-back {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: #111;
+  color: white;
+  border-radius: 10%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav > a {
+  margin: 0 .5rem;
+  padding: 0.2rem;
+}
+
+hr {
+  opacity: .5;
+  margin: .5rem 0 2rem 0;
+}
+
+li {
+  list-style: circle;
+  padding-left: 0.1em;
+  margin: .5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 600;
+  padding: .5rem;
+  padding-left: 0;
+  margin: .2em 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: solid 2px #131313;
+  padding: 1em 1.2em;
+  background-color: #eee;
+  font-size: 1.2rem;
+}
+
+.share-btns {
+  margin: .2rem;
+}
+
+.container {
+  margin: 0.5rem 0;
+  padding: .2rem .5rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+.sub-section {
+  padding: 0.5rem 1rem;
+}
+
+.failed-task {
+  border: solid 2px red;
+}
+
+.failed-task p,
+.failed-task h3 {
+  text-decoration: line-through;
+}
+
+.failed-task::before {
+  text-decoration: none;
+  content: "Failed to Deliver";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: block;
+  text-align: center;
+  background-color: #ffa4a4;
+  color: #131313;
+  padding: 0.3rem 0;
+}
+
+#wins {
+  background-color: #b6ffb3;
+}
+
+#losses {
+  background-color: #fbe4e4;
+}
+/*# sourceMappingURL=style.css.map */
