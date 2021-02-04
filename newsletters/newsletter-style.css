@@ -102,6 +102,13 @@ blockquote {
   padding: 0.5rem 1rem;
 }
 
+.sub-section .long-text {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  padding: .5em;
+  padding-top: 0;
+}
+
 .failed-task {
   border: solid 2px red;
 }
@@ -131,4 +138,4 @@ blockquote {
 #losses {
   background-color: #fbe4e4;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=newsletter-style.css.map */

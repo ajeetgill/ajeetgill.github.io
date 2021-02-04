@@ -61,15 +61,7 @@ h2 {
 h3 {
   font-size: 1.3rem;
 }
-section:nth-of-type(even){
-    // background-color: hsl(0, 0%, 95%);
-}
-section:nth-of-type(odd){
-    // background-color: hsl(0, 0%, 90%);
-}
-.sub-section:nth-of-type(even){
-    // background-color: hsl(0, 0%, 100%);
-}
+
 blockquote {
   margin: 0;
   padding: 0;
@@ -96,7 +88,24 @@ blockquote {
 
 .sub-section {
   padding: 0.5rem 1rem;
+  .long-text{
+    font-size: 1.1rem;
+  line-height: 1.7rem;
+  padding: .5em;
+  padding-top: 0;
 }
+
+}
+// section:nth-of-type(even){
+//   // background-color: hsl(0, 0%, 95%);
+// }
+// section:nth-of-type(odd){
+//   // background-color: hsl(0, 0%, 90%);
+// }
+// .sub-section:nth-of-type(even){
+//   // background-color: hsl(0, 0%, 100%);
+// }
+
 
 .failed-task {
 //   background-color: rgb(251, 228, 228);
