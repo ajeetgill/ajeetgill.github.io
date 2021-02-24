@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Ajeet Gill</title>
-  <!-- SUGGESTION: rename title bar when visiter leaves the tab -->
-  <!-- SUGGESTION: auto read the default theme of user system and set enable theme on the page accordingly -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajeet Gill</title>
+    <!-- SUGGESTION: rename title bar when visiter leaves the tab -->
+    <!-- SUGGESTION: auto read the default theme of user system and set enable theme on the page accordingly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
-  <main class="container">
+  <body>
+    <header>
+      <nav>
+        <a href="./newsletters/newsletter-archieve.html">newsletters</a> | 
+        <a href="./Q&A/questions.html">questions</a>
+      </nav>
+    </header>
+    <main class="container">
+      
 
-    <div class="sidebarleft"></div>
-    <section class="about-me">
-      <p>Hey, I'm</p>
-      <h1>AJEET</h1>
-      <p>I do
-        <span class="txt-rotate" data-period="10"
-          data-rotate='[ "various stuff.", "read books.", "web development.", "fun!!!!!" ]'></span>
-      </p>
-      <div id="socialmedia">
-        <a href="https://www.instagram.com/ajeet_gill_/"><img class="social-media-icons" src="./assets/instagram.svg"
-            alt="instagram account" /></a>
-        <a href="https://github.com/ajeetshergill"><img class="social-media-icons" src="./assets/github.svg"
-            alt="github account" /></a>
-        <a href="https://www.goodreads.com/user/show/83526171-ajeet-gill"><img class="social-media-icons"
-            src="./assets/goodreads.svg" alt="goodreads account" /></a>
-        <a href="https://www.linkedin.com/in/ajeet-gill/"><img class="social-media-icons" src="./assets/linkedin.svg"
-            alt="linkedIn account" /></a>
-      </div>
-      <div id="notice" style="font-size: 1rem; line-height: .5rem;">
-        <p>I've started a subscibers list :)</p>
-        <p> <span style="font-size: .8rem; font-weight: 800;">to share</span> <span
-            style="background-color: rgb(218 218 218); padding: 0px 10px;"><a href="./newsletters/newsletter-archieve.html"> 'My Newsletter📰📧' </a></span> </p>
-        <p id="tempID" style="margin-top: 10px;">FOR SURE IT WON'T BE BORING</p>
-        <button style="padding: 10px;margin-top: 10px;
+      <div class="sidebarleft"></div>
+      <section class="about-me">
+        <p>Hey, I'm</p>
+        <h1>AJEET</h1>
+        <p>I do
+          <span class="txt-rotate" data-period="10"
+            data-rotate='[ "various stuff.", "read books.", "web development.", "fun!!!!!" ]'></span>
+        </p>
+
+        <div id="notice" style="font-size: 1rem; line-height: .5rem;">
+          <p> <span style="font-size: .8rem; font-weight: 800;">read my</span> <span
+              style="background-color: rgb(218 218 218); padding: 0px 10px; margin: 0.5em;"><a
+                href="./newsletters/newsletter-archieve.html"> 'Newsletter📧' </a></span> <span
+              style="font-size: .8rem; font-weight: 800;"> it's not boring</span> </p>
+
+          <button style="padding: 10px;margin-top: 10px;
         border: solid 2px #88ee00;
         background-color: #bcff55;
         border-radius: 5px;
         box-shadow: #bbff55 0px 10px 25px;"><a
-            style="text-decoration: none; font-weight: 900; text-transform: uppercase;"
-            href="https://forms.gle/G3MztEWUrnPScqCw9"> Get on the
-            list</a></button>
-      </div>
+              style="text-decoration: none; font-weight: 900; text-transform: uppercase;"
+              href="https://forms.gle/G3MztEWUrnPScqCw9"> Get Free weekly newsletter</a></button>
+        </div>
+        <div id="socialmedia" style="opacity: .1; transform: scale(.5);">
+          <a href="https://www.instagram.com/ajeet_gill_/"><img class="social-media-icons" src="./assets/instagram.svg"
+              alt="instagram account" /></a>
+          <a href="https://github.com/ajeetshergill"><img class="social-media-icons" src="./assets/github.svg"
+              alt="github account" /></a>
+          <a href="https://www.goodreads.com/user/show/83526171-ajeet-gill"><img class="social-media-icons"
+              src="./assets/goodreads.svg" alt="goodreads account" /></a>
+          <a href="https://www.linkedin.com/in/ajeet-gill/"><img class="social-media-icons" src="./assets/linkedin.svg"
+              alt="linkedIn account" /></a>
+        </div>
 
-    </section>
-    <div class="sidebarright"></div>
+      </section>
+      <div class="sidebarright"></div>
 
-    <!-- Commented out the waves code coz it was distracting :|  -->
-    <!-- <link rel="stylesheet" href="./css/waves.css" /> -->
-    <script src="./js/main.js"></script>
+      <!-- Commented out the waves code coz it was distracting :|  -->
+      <!-- <link rel="stylesheet" href="./css/waves.css" /> -->
+      <script src="./js/main.js"></script>
 
-    
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-    <script defer src="./init-firebase.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+      <script defer src="./init-firebase.js"></script>
 
-  </main>
-</body>
+    </main>
+    
+  </body>
 
 </html>
 <!--NOTE: export the color hex values, icons and images beforehand. -->
