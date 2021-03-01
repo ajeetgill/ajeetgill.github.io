@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aj: Questions</title>
-    <link rel="stylesheet" href="./q&a.css">
-</head>
-<body>
-    <!-- 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aj: Questions</title>
+        <link rel="stylesheet" href="./q&a.css">
+    </head>
+
+    <body>
+        <!-- 
         The <header> element represents a container for introductory content or a set of navigational links.
      -->
-    <header class="container container--header">
-        <h1><a href="../index.html"><span style="font-size:1.3em; margin-right: -9.2px;">&And;</span>J</a></h1> 
-    </header>
-    <main class="container">
-        <!-- The <article> element specifies independent, self-contained content. 
+        <header class="container container--header">
+            <h1><a href="../index.html"><span style="font-size:1.3em; margin-right: -9.2px;">&And;</span>J</a></h1>
+        </header>
+        <main class="container">
+            <!-- The <article> element specifies independent, self-contained content. 
             I'm using Article tag coz each question is stand-alone.    
         -->
-        <section class="">
-            <h1> Question's I've collected over years</h1>
-            
-            <figure class="container container--question">
-                <!-- Semantic
+            <section class="">
+                <h1> Question's I've collected over years</h1>
+
+                <figure class="container container--question">
+                    <!-- Semantic
                     https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#hey-what-about-the-figure-element -->
-                <p class="container--question__text">
-                    What could possibly motivate me to revisit the suffering I'd endured?
-                </p>
-                <figcaption class="container--question__credits">
-                  &mdash; Dan Ariely, <cite>Payoff</cite>  
-                </figcaption>
-              </figure>
-        </section>
-        
-        <!-- 
+                    <p class="container--question__text">
+                        What could possibly motivate me to revisit the suffering I'd endured?
+                    </p>
+                    <figcaption class="container--question__credits">
+                        &mdash; Dan Ariely, <cite>Payoff</cite>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- 
             A <section> is a thematic grouping of content, typically with a heading. 
             The <section> element defines section in a document.
         -->
-    </main>
-    <footer></footer>
+        </main>
+        <footer></footer>
 
 
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-    <script defer src="./init-firebase.js"></script>
-</body>
+        <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+        <script defer src="./init-firebase.js"></script>
+
+        <!-- Twitter universal website tag code -->
+        <script>
+            !function (e, t, n, s, u, a) {
+                e.twq || (s = e.twq = function () {
+                    s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+                }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                    a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+            }(window, document, 'script');
+            // Insert Twitter Pixel ID and Standard Event data below
+            twq('init', 'o5lb9');
+            twq('track', 'PageView');
+        </script>
+        <!-- End Twitter universal website tag code -->
+    </body>
+
 </html>
