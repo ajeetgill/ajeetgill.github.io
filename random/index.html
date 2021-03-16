@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aj: Newsletters</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .newsletter-list a:hover {
+        padding: .25rem 1.2rem .2rem 1.2rem;
+        background-color: #eee;
+      }
+
+      .newsletter-list a {
+        text-decoration: none;
+        background-color: #ddd;
+        padding: .2rem 1rem;
+        border-radius: 5px;
+        transition: 0.2s all;
+      }
+    </style>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script defer src="./init-firebase.js"></script>
+  </head>
+
+  <body>
+    <section class="container">
+      <a id="btn-back" href="../index.html"><span style="
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+        display: inline-block;
+        /* padding-bottom: 0.2rem; */
+    ">👈</span>previous</a>
+      <h1 class="page-title">Sharing useful random things</h1>
+
+    </section>
+    <section class="container">
+      <article class="sub-section newsletter-list" id="">
+        My experience with:
+        <h3 id="" class="article-heading">
+            
+          <a href="./he-needs-time/he_just_needs_some_time.html" target="">🤦‍♂️"He just needs some time", "Oh you’ll get over it”, “It’s just a phase”😟</a>
+        </h3>
+        <sub style="display: inline-block;position: relative;top: -.5rem;font-size: .8rem;">[ 2017-18: when I hit rock bottom ]</sub>
+      </article>
+    </section>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script defer src="./init-firebase.js"></script>
+
+    <!-- Twitter universal website tag code -->
+    <script>
+      !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+          a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+      }(window, document, 'script');
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq('init', 'o5lb9');
+      twq('track', 'PageView');
+    </script>
+    <!-- End Twitter universal website tag code -->
+  </body>
+
+</html>
