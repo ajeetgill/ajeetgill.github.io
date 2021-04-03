@@ -36,12 +36,32 @@ html {
   border-radius: 2px;
 }
 
+.container--header a {
+  color: #b00b;
+}
+
+.container sup {
+  font-size: .65em;
+}
+
 .long-para {
-  line-height: 2em;
+  line-height: 1.7em;
 }
 
 .long-para--less-imp {
+  color: #babe;
   color: #8f8f8f;
   font-size: 0.9rem;
+}
+
+.page-title {
+  background-color: whitesmoke;
+  padding: .5em;
+  margin: auto;
+  margin-left: -10px;
+  padding-left: 5px;
+  border-left: 5px solid #babe;
+  border-right: 5px solid #babe;
+  color: #b00b;
 }
 /*# sourceMappingURL=single-article-style.css.map */
