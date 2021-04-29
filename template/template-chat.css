@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+  font-size: 13px;
+}
+
+.container {
+  padding: .5em;
+}
+
+.container--chat {
+  max-width: 890px;
+  margin: auto;
+  padding: 4em 2em;
+  font-weight: 500;
+  background-color: #262626;
+  color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2em;
+}
+
+.said-by {
+  border-radius: .8em;
+  max-width: 400px;
+}
+
+.said-by--ajeet {
+  background-color: #4d4d4d;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: .8em .8em 0px .8em;
+  padding: .75em 2em 1em .5em;
+}
+
+.said-by--friend {
+  background-color: #ff99ff;
+  color: #1a1a1a;
+  border-radius: .8em .8em .8em 0px;
+  padding: .75em .5em 1em 2em;
+}
+
+.said-by .reply {
+  margin: 1em 0;
+  border-radius: .5em;
+  border-left: 5px solid black;
+}
+
+.said-by .reply--ajeet {
+  color: white;
+}
+
+.said-by .reply--ajeet::before {
+  content: 'Ajeet';
+}
+
+.said-by .reply--friend::before {
+  content: 'Friend';
+}
+
+.said-by .reply::before {
+  display: block;
+  font-size: .8rem;
+  font-weight: 800;
+  padding: .5em;
+}
+/*# sourceMappingURL=template-chat.css.map */
