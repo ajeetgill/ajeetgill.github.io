@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -29,26 +34,29 @@ html, body {
 .said-by {
   border-radius: .8em;
   max-width: 400px;
+  max-width: Min(70%, 400px);
 }
 
 .said-by--ajeet {
   background-color: #4d4d4d;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  border-radius: .8em .8em 0px .8em;
-  padding: .75em 2em 1em .5em;
+  border-radius: 1em 1em 0px 1em;
+  padding: 0.75em Min(2em, 2vw) 1em 0.75em;
 }
 
 .said-by--friend {
-  background-color: #ff99ff;
+  background-color: #cccccc;
   color: #1a1a1a;
   border-radius: .8em .8em .8em 0px;
-  padding: .75em .5em 1em 2em;
+  padding: 0.75em 0.5em 1em Min(2em, 2vw);
 }
 
 .said-by .reply {
-  margin: 1em 0;
+  margin: .25em 0 1em 0;
   border-radius: .5em;
+  min-width: 100%;
+  border: 2px solid black;
   border-left: 5px solid black;
 }
 
