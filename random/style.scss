@@ -75,6 +75,22 @@ blockquote {
     margin: .2rem;
 }
 
+.external-links{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  &__list{
+    &--item{
+      list-style: lower-roman;
+    }
+  }
+  &__links{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
 .container {
   margin: 0.5rem 0;
   padding: .2rem .5rem;
@@ -84,6 +100,9 @@ blockquote {
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 0;
+  &--secondary{
+    font-size: 1.5rem;
+  }
 }
 
 .sub-section {
