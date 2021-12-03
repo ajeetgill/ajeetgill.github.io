@@ -1,7 +1,18 @@
+* {
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 0.5rem 0;
+  padding: .2rem .5rem;
+}
+
 .container--referral {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: auto;
+  max-width: 700px;
 }
 
 .page-title {
@@ -14,7 +25,7 @@
 
 .external-links__code {
   font-size: .8rem;
-  font-weight: 900;
+  font-weight: 600;
   margin: .25em 0;
 }
 

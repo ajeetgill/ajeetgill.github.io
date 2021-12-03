@@ -1,6 +1,14 @@
-.container{
+* {
+  font-family: "Montserrat";
+  // color: #fff;
+}
+.container {
+  margin: 0.5rem 0;
+  padding: .2rem .5rem;
     &--referral{
         height: fit-content;
+        margin: auto;
+        max-width: 700px;
     }
 }
 
@@ -13,7 +21,7 @@
 .external-links{
     &__code{
         font-size: .8rem;
-        font-weight: 900;
+        font-weight: 600;
         margin: .25em 0;
     }
     &__info{
