@@ -1,0 +1,41 @@
+.container{
+    &--referral{
+        height: fit-content;
+    }
+}
+
+.page-title{
+    font-size: 1.75rem;
+    &--secondary{
+        font-size: 1.25rem;
+    }
+}
+.external-links{
+    &__code{
+        font-size: .8rem;
+        font-weight: 900;
+        margin: .25em 0;
+    }
+    &__info{
+        font-size: .8rem;
+        margin-top: .25em;
+    }
+}
+.external-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: .5em;
+    &__list{
+      &--item{
+        list-style: lower-roman;
+      }
+    }
+    &__links{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  

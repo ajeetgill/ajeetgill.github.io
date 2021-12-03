@@ -9,6 +9,7 @@
           justify-content: space-evenly;
   gap: 1em;
   padding: .25em;
+  font-size: .8rem;
 }
 
 .nav__items {
