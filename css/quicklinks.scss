@@ -3,6 +3,8 @@
     // color: #fff;
   }
   .container {
+    // background: #000;
+    // color: white;
     margin: 0.5rem 0;
     padding: .2rem .5rem;
       &--links{
@@ -34,12 +36,14 @@
     display: flex;
     flex-direction: column;
     gap: 1.25em;
-    &__item{
-        a{
-            text-decoration: none;
-            &:hover{
-            text-decoration: underline;
-            }
+    &__link{
+        text-decoration: none;
+        &:hover{
+        text-decoration: underline;
         }
+    }
+    &__info{
+      font-size: .8rem;
+      margin-top: .5em;
     }
   }
