@@ -1,0 +1,45 @@
+* {
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 0.5rem 0;
+  padding: .2rem .5rem;
+}
+
+.container--links {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  max-width: 700px;
+}
+
+.page-title {
+  font-size: 1.75rem;
+}
+
+.page-title--secondary {
+  font-size: 1.25rem;
+}
+
+.list {
+  padding-left: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25em;
+}
+
+.list__item a {
+  text-decoration: none;
+}
+
+.list__item a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=quicklinks.css.map */
