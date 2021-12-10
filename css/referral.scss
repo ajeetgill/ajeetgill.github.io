@@ -12,6 +12,20 @@
     }
 }
 
+.toc{
+  &__heading{
+    margin: .5em;
+  }
+  &__list{
+    margin: 0;
+    margin-bottom: .5em;
+  }
+  &__list-item{
+    margin-top: .5em;
+  }
+
+}
+
 .page-title{
     font-size: 1.75rem;
     &--secondary{
