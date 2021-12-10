@@ -34,6 +34,10 @@
   margin-top: .25em;
 }
 
+.external-links__info:last-of-type {
+  padding-bottom: 2em;
+}
+
 .external-links {
   display: -webkit-box;
   display: -ms-flexbox;

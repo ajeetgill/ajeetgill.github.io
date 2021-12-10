@@ -27,6 +27,10 @@
     &__info{
         font-size: .8rem;
         margin-top: .25em;
+        &:last-of-type{
+          // border: solid 2px red;
+          padding-bottom: 2em;
+        }
     }
 }
 .external-links{
